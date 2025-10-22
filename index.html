@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meal Finder</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <header>
+        <a class="brand" href="#home" id="brand">
+            <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden>
+                <circle cx="12" cy="12" r="10" fill="#fff" opacity="0.12" />
+                <path d="M7 8c1.38-2 5-2 6 0 1 2 4 2 5 0" stroke="#fff" stroke-width="1.2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+            </svg>
+            <h1>Meal Finder</h1>
+        </a>
+
+        <nav>
+            <!-- Hover-based dropdown aligned left -->
+            <div class="dropdown" id="navDropdown">
+                <button class="drop-toggle" id="dropToggle" aria-expanded="false" aria-haspopup="true">🍽️
+                    Categories</button>
+                <div class="drop-menu" id="dropMenu" role="menu" aria-label="categories menu"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container" id="app">
+        <!-- SPA content gets injected here -->
+    </main>
+
+    <footer style="text-align:center;color:var(--muted);padding:28px 20px;">
+        Built with TheMealDB public API
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
